@@ -1,3 +1,11 @@
+# FYI
+
+My preferred way of taking notes is by using **Notion,** meaning that there will be no notification when a specific thing is added or changed from the notes.
+
+Everything is automatically updated and can be accessed using the **notes url.**
+
+Usually, after every push the notes may be updated and a commit message may confirm the change.
+
 # My notes:
 
 ### [Java Basics](https://magenta-broccoli-129.notion.site/Java-Basics-58ae752d32704f66b89c6f9d817a18e4)
