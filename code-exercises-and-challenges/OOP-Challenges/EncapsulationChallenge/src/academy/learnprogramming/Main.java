@@ -4,8 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         Printer printer = new Printer(10, 0, true);
-        printer.fillInkLevel(10);
+
+        System.out.println("Total printed pages: " + printer.getPrintedPages());
         printer.fillInkLevel(90);
-        System.out.println(printer.getInkLevel());
+        printer.printPages(100);
+        System.out.println("Total printed pages: " + printer.getPrintedPages());
+        System.out.println("Ink level " + printer.getInkLevel());
     }
 }
