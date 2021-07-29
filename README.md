@@ -14,6 +14,8 @@ Usually, after every push the notes may be updated and a commit message may conf
 
 ### [Java OOP 02](https://magenta-broccoli-129.notion.site/Java-OOP-02-3def2780e59c453ca08a6f4efd49dd22)
 
+### [Arrays, Java inbuilt Lists, Autoboxing and Unboxing](https://magenta-broccoli-129.notion.site/Arrays-Java-inbuilt-Lists-Autoboxing-and-Unboxing-ad01861796554e78a555989d150afc70)
+
 # Code Exercises:
 
 ### Click [here](https://magenta-broccoli-129.notion.site/Code-Exercices-f22414081eab49ec93c3310868126876) for the code exercises.
