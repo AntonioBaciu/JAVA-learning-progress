@@ -16,19 +16,18 @@ public class Printer {
         this.isDuplex = isDuplex;
     }
 
-    public int fillInkLevel(int number) {
+    public void fillInkLevel(int number) {
         // Number validation ( between 0 & 100 )
         if ((number < 0) || (number > 100)) {
             System.out.println("Invalid ink value!");
-            return 0;
+            return;
         }
 
         if (number + inkLevel <= 100) {
             System.out.println("The ink level has been increased by " + number);
-            return inkLevel += number;
+            inkLevel += number;
         } else {
             System.out.println("In order to avoid overfilling, reduce the amount of ink");
-            return inkLevel;
         }
     }
 
