@@ -1,5 +1,6 @@
 package academy.learnprogramming;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -58,7 +59,7 @@ public class Main {
     //add input to grocery list
     public static void addItem() {
         System.out.print("Item to be added: ");
-        groceryList.addGroceryItem(scanner.nextLine());
+        groceryList.addGroceryItem(scanner.nextLine().toLowerCase());
     }
 
     // modify
@@ -67,7 +68,7 @@ public class Main {
         int itemNo = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Enter replacement item");
-        String newItem = scanner.nextLine();
+        String newItem = scanner.nextLine().toLowerCase();
         groceryList.modifyGroceryItem(itemNo - 1, newItem);
     }
 
@@ -76,13 +77,13 @@ public class Main {
         System.out.println("Remove item: ");
         int itemNum = scanner.nextInt();
         scanner.nextLine();
-        groceryList.removeGroceryItem(itemNum-1);
+        groceryList.removeGroceryItem(itemNum - 1);
     }
 
     // search
     public static void searchForItem() {
         System.out.println("Search item: ");
-        String searchItem = scanner.nextLine();
+        String searchItem = scanner.nextLine().toLowerCase();
         if (groceryList.findItem(searchItem) != null) {
             System.out.println("Found " + searchItem + " in the grocery list");
         } else {
