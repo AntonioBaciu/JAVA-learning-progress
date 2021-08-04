@@ -13,5 +13,7 @@ public class Main {
         jakesPhone.powerOn();
         jakesPhone.callPhone(6623);
         jakesPhone.answer();
+        jakesPhone.isRinging();
+        jakesPhone.dial(6623);
     }
 }
