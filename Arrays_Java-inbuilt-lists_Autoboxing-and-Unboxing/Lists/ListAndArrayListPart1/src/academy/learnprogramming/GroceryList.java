@@ -14,7 +14,7 @@ public class GroceryList {
     // groceryList.get(i) -> returns the item at index [i]
     // i + 1 -> is used since the printed list will start from 1. and not from 0.
     public void printGroceryList() {
-        System.out.println("We have " + groceryList.size() + " items in your grocery list");
+        System.out.println("You have " + groceryList.size() + " items in your grocery list");
         for (int i = 0; i < groceryList.size(); i++) {
             System.out.println((i + 1) + ". " + groceryList.get(i));
         }
