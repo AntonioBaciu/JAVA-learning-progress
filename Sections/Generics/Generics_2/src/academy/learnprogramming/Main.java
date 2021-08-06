@@ -13,7 +13,21 @@ public class Main {
         happyHoops.addPlayer(milo);
         happyHoops.addPlayer(garry);
         happyHoops.addPlayer(codi);
+        happyHoops.numPlayers();
 
-        System.out.println(happyHoops.numPlayers());
+        FootballPlayer opponent1 = new FootballPlayer("Opponent1");
+        FootballPlayer opponent2 = new FootballPlayer("Opponent2");
+        FootballPlayer opponent3 = new FootballPlayer("Opponent3");
+
+        Team sadHoops = new Team("Sad Hoops");
+        sadHoops.addPlayer(opponent1);
+        sadHoops.addPlayer(opponent2);
+        sadHoops.addPlayer(opponent3);
+        sadHoops.numPlayers();
+
+        happyHoops.matchResult(sadHoops, 10, 5);
+
+        happyHoops.ranking();
+        sadHoops.ranking();
     }
 }

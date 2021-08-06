@@ -38,8 +38,10 @@ public class Team {
     }
 
     // Returns the number of players in the team
-    public int numPlayers() {
-        return this.teamMembers.size();
+    public void numPlayers() {
+        System.out.println("############################################");
+        System.out.println("Team " + this.name + " contains " + teamMembers.size() + " active players");
+        System.out.println("############################################");
     }
 
     //
@@ -55,14 +57,15 @@ public class Team {
         played++; // increases the number of games played after every match
 
         //????
-        if (opponent != null) {
-            opponent.matchResult(null, theirScore, ourScore);
-        }
+//        if (opponent != null) {
+//            opponent.matchResult(null, theirScore, ourScore);
+//        }
     }
 
     // returns the ranking score of the team
-    public int ranking() {
-        return (won * 2) + tied; // one ranking score formula
+    public void ranking() {
+        int rank = (won * 2) + tied;
+        System.out.println(this.name + " Rank = " + rank);
+        System.out.println("############################################");
     }
-
 }
