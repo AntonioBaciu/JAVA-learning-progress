@@ -15,18 +15,22 @@ public class Main {
         happyHoops.addPlayer(codi);
         happyHoops.numPlayers();
 
+        // Enemy players
         FootballPlayer opponent1 = new FootballPlayer("Opponent1");
         FootballPlayer opponent2 = new FootballPlayer("Opponent2");
         FootballPlayer opponent3 = new FootballPlayer("Opponent3");
 
+        // Enemy team
         Team sadHoops = new Team("Sad Hoops");
         sadHoops.addPlayer(opponent1);
         sadHoops.addPlayer(opponent2);
         sadHoops.addPlayer(opponent3);
         sadHoops.numPlayers();
 
+        // Set the match results
         happyHoops.matchResult(sadHoops, 10, 5);
 
+        // Display the rank of each team
         happyHoops.ranking();
         sadHoops.ranking();
     }
